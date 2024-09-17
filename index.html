@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body dir="rtl">
+    <h1>דף התחברות </h1>
+    <input type="text" placeholder="הכנס שם משתמש " id="username"><br>
+    <input type="password" placeholder="הכנס שם סיסמא  " id="password">
+    <br>
+    <button onclick="login()">התחברות </button>
+
+
+    <script>
+let userDb = "omer"
+let passDb = "123456"
+let userValue = document.getElementById("username")
+let passValue = document.getElementById("password")
+
+
+function login() {
+    if(userDb == userValue.value && passDb == passValue.value){
+        alert("הפרטים נכונים ")
+    }
+else {
+    alert("הפרטים לא נכונים ")
+}
+
+}
+    </script>
+
+
+
+</body>
+</html>
